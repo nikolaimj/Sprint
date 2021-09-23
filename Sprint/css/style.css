@@ -1,0 +1,85 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #e8b88b; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+body {
+  font-family: Abel;
+}
+.logo{
+  margin-bottom: 100px;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+.logo img{
+  float:right;
+  margin: top 100px;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding:15px 25px 20px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ab8149;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+#content {
+  display: flex;
+  justify-content: space-evenly;
+}
+main {
+  padding: 12px;
+  width: 65%; /* do. */
+}
+h1 {text-align: center;}
+/*
+  Løsnig: rækker med produkter.
+  Se filen: row-sample.html.
+*/
+.raekke {
+  display: flex;
+}
+
+.produkt {
+  width: 50%;
+}
+
+.produkt img {
+  width: 100%;
+}
